@@ -1,0 +1,61 @@
+/* Estilo general para imágenes */
+.imagen-responsiva {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción original */
+    max-width: 500px; /* Tamaño máximo para imágenes grandes */
+    border: 1px solid #ccc; /* Opcional: un borde para resaltar */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 10px; /* Espacio entre las imágenes */
+}
+
+/* Estilo para el contenedor del video */
+.video-container {
+    width: 100%;
+    max-width: 500px; /* Tamaño máximo para el video */
+    margin: 10px auto; /* Centra el video */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden; /* Asegura que el video se recorte si es necesario */
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .imagen-responsiva {
+        max-width: 300px; /* Cambia el tamaño máximo en pantallas pequeñas */
+    }
+
+    .video-container {
+        max-width: 300px; /* Video más pequeño en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .imagen-responsiva {
+        max-width: 200px; /* Aún más pequeño para dispositivos móviles */
+    }
+
+    .video-container {
+        max-width: 200px; /* Video aún más pequeño para dispositivos móviles */
+    }
+}
+
+/* Estilo para la galería */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas por fila */
+    gap: 20px; /* Espacio entre los elementos */
+    justify-items: center;
+    padding: 20px;
+}
+
+/* Ajuste para pantallas más grandes */
+@media (min-width: 768px) {
+    .galeria {
+        grid-template-columns: repeat(4, 1fr); /* Cuatro columnas por fila en pantallas grandes */
+    }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+}
