@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.grid {
+  display: block; /* Masonry.js will handle the layout */
+  margin: 0 auto;
+}
+
+.grid-item {
+  width: 30%; /* Adjust based on your preference */
+  margin-bottom: 20px;
+}
+
+.grid-item img {
+  width: 100%;
+  display: block;
+  height: auto; /* Mantiene la proporción original */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+@media (max-width: 768px) {
+  .grid-item {
+    width: 45%; /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-item {
+    width: 100%; /* Full width for very small screens */
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+}
